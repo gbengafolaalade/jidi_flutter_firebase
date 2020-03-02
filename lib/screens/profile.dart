@@ -41,57 +41,24 @@ class _ProfileScreenState extends State<ProfileScreen>{
           BottomNavigationBarItem(title: Text('Profile'), icon: Icon(Icons.supervised_user_circle))
 
         ]),
-        body: GridView.count(
-          primary: false,
-          crossAxisCount: 2,
-          crossAxisSpacing: 20.0,
-          mainAxisSpacing: 20.0,
-          padding: EdgeInsets.all(20.0),
-          children: _listItem.map((item) => Card(
-            color: Colors.transparent,
-            child: Container(
-              decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              image: DecorationImage(
-                image: AssetImage(item),
-                fit: BoxFit.cover
-              )  
-              ),
-              child: Container(
+        body: Container(
+          height: 150,
+          color: Colors.orangeAccent,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  gradient: LinearGradient(
-                    begin: Alignment.bottomRight,
-                    colors: [
-                      Colors.black.withOpacity(.9),
-                      Colors.black.withOpacity(.2)
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                  
+                ),
+              )
+            ],
+          ),
 
-                    ]
-                    )
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-
-                        Text(
-                          'Business',
-                          style: TextStyle(fontSize: 22, color: Colors.white), ),
-
-                      ],
-                    ),
-                  ),
-              ),
-              
-            ),
-
-
-          )
-          ).toList()
-          
-          )
+        )
         
         
       );
