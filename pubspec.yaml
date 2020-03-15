@@ -23,6 +23,17 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  font_awesome_flutter: 8.7.0
+  percent_indicator: ^2.1.1+1
+  video_player: ^0.10.8+1
+  flutube: ^0.8.3
+  chewie: ^0.9.10
+  flutter_launcher_icons: ^0.7.4
+
+flutter_icons:
+  android: "launcher_icon" 
+  ios: true
+  image_path: "assets/jidi-logo.png"  
 
 dev_dependencies:
   flutter_test:
@@ -43,6 +54,21 @@ flutter:
   assets:
   - assets/seen-from-outside.jpg
   - assets/gbenga-3.PNG
+  - assets/bu-bg2.jpg
+  - assets/videos/sample.mp4
+  - assets/marketwoman.png
+  - assets/playvid.png
+  - assets/Happy-Market-Woman.jpg
+  - assets/Market_Women_in_lagos.jpg
+  - assets/playvid2.png
+  - videos/mosbi.mp4
+  - videos/intro.mp4
+
+
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:

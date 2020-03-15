@@ -1,34 +1,52 @@
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+
 class Course {
   String imageUrl;
   String name;
   String address;
-  int price;
+  double price;
+  Icon icon;
 
   Course({
     this.imageUrl,
     this.name,
     this.address,
     this.price,
+    this.icon,
   });
 }
 
 final List<Course> courses = [
   Course(
-    imageUrl: 'assets/images/image.jpg',
-    name: 'Papas Pizza',
+    imageUrl: 'assets/bu-bg2.jpg',
+    name: 'Beginner',
     address: 'Monday Madness',
-    price: 75,
+    price: 0.9,
+    icon: Icon(Icons.lock_open),
+    
   ),
   Course(
-    imageUrl: 'assets/images/55c157_ea4355dfae3a4d0ebb11d3e96b64a346~mv2_d_3267_2178_s_2.jpg',
-    name: 'Starbites',
+    imageUrl: 'assets/bu-bg2.jpg',
+    name: 'Intermediate',
     address: '30% off Lunch',
-    price: 30,
+    price: 0.4,
+    icon: Icon(Icons.lock),
   ),
   Course(
-    imageUrl: 'assets/images/sunsets-from-skybar.jpg',
-    name: 'Tea Room',
+    imageUrl: 'assets/bu-bg2.jpg',
+    name: 'Professional',
     address: 'Free tea biscuits',
-    price: 24,
+    price: 0.2,
+    icon: Icon(Icons.lock),
+  ),
+  Course(
+    imageUrl: 'assets/bu-bg2.jpg',
+    name: 'Advanced',
+    address: 'Free tea biscuits',
+    price: 0.6,
+    icon: Icon(Icons.lock),
   ),
 ];

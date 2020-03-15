@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:widget_test/screens/profile.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 class HomeScreen extends StatefulWidget{
   @override
@@ -19,13 +20,7 @@ class _HomeScreenState extends State<HomeScreen>{
     'assets/seen-from-outside.jpg',
   ];
 
-  final List<Widget> _screens = [
-    HomeScreen(),
-    HomeScreen(),
-    HomeScreen(),
-    ProfileScreen(),
-
-  ];
+  
 
   int _currentTab = 0;
   
@@ -36,23 +31,34 @@ class _HomeScreenState extends State<HomeScreen>{
         drawer: Drawer(),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentTab,
-          onTap: (int value){
-            setState(() {
-              _currentTab = value;
-              if (_currentTab == 3) {
-                Navigator.pushNamed(context, '/profile');
-              }
-
-            });
+          onTap: (int idx){
+            switch (idx) {
+          case 0:
+            // do nuttin
+            Navigator.pushNamed(context, '/home');
+            break;
+          case 1:
+            Navigator.pushNamed(context, '/leader');
+            break;
+          case 2:
+            Navigator.pushNamed(context, '/profile');
+            break;
+          case 3:
+            Navigator.pushNamed(context, '/profile');
+            break;
+        }
+            
           },
           
           items: [
           BottomNavigationBarItem(title: Text('Home'), icon: Icon(Icons.home,)),
-          BottomNavigationBarItem(title: Text('Leaderboard'), icon: Icon(Icons.star_border)),
+          BottomNavigationBarItem(title: Text('Leaderboard'), icon: FaIcon(FontAwesomeIcons.award)),
           BottomNavigationBarItem(title: Text('Downloads'), icon: Icon(Icons.cloud_download)),
           BottomNavigationBarItem(title: Text('Profile'), icon: Icon(Icons.supervised_user_circle))
 
-        ]),
+        ].toList()
+        
+        ),
         body: GridView.count(
           primary: false,
           crossAxisCount: 2,
@@ -61,42 +67,47 @@ class _HomeScreenState extends State<HomeScreen>{
           padding: EdgeInsets.all(20.0),
           children: _listItem.map((item) => Card(
             color: Colors.transparent,
-            child: Container(
-              decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              image: DecorationImage(
-                image: AssetImage(item),
-                fit: BoxFit.cover
-              )  
-              ),
+            child: InkWell(
+              onTap: (){
+                  Navigator.pushNamed(context, '/subject');
+              },
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  gradient: LinearGradient(
-                    begin: Alignment.bottomRight,
-                    colors: [
-                      Colors.black.withOpacity(.9),
-                      Colors.black.withOpacity(.2)
+                borderRadius: BorderRadius.circular(20),
+                image: DecorationImage(
+                  image: AssetImage(item),
+                  fit: BoxFit.cover
+                )  
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomRight,
+                      colors: [
+                        Colors.black.withOpacity(.9),
+                        Colors.black.withOpacity(.2)
 
-                    ]
-                    )
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-
-                        Text(
-                          'Business',
-                          style: TextStyle(fontSize: 22, color: Colors.white), ),
-
-                      ],
+                      ]
+                      )
                     ),
-                  ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+
+                          Text(
+                            'Business',
+                            style: TextStyle(fontSize: 22, color: Colors.white), ),
+
+                        ],
+                      ),
+                    ),
+                ),
+                
               ),
-              
             ),
 
 
