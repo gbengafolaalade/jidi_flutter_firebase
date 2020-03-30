@@ -30,41 +30,8 @@ class _Quiz2State extends State<Quiz2> {
 
       body: ListView(
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              Container(
-                height: 100,
-                width: 410.5,
-                color: Theme.of(context).scaffoldBackgroundColor,
-                child: Stack(
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        
-                        
-
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            
-                            Padding(
-                              padding: EdgeInsets.only(top: 20,left: 19),
-                              child: Container(child: Text('What is Kojos annual salary?',style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800,  color: Theme.of(context).primaryColor),)),
-                            ),
-                            
-                          ]
-                        ),
-
-                      Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            
-                            Padding(
-                              padding: EdgeInsets.only(left: 19),
-                              child: Container(
-                                child: RaisedButton(
+          Text('What is Kojos annual salary?', textAlign: TextAlign.center, style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800,  color: Theme.of(context).primaryColor)),
+          RaisedButton(
                                       
                                       shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(15.0),),
                                       color: Color(0xFFFFDA23),
@@ -75,6 +42,7 @@ class _Quiz2State extends State<Quiz2> {
                                       },
                                       child: Row(
                                         children: <Widget>[
+                                          SizedBox(width: 110),
                                           FaIcon(FontAwesomeIcons.solidPlayCircle, color: Theme.of(context).scaffoldBackgroundColor,),
                                           SizedBox(width: 5),
                                           Text('Play Audio',
@@ -86,27 +54,6 @@ class _Quiz2State extends State<Quiz2> {
                                       ),
                                       ),
                                       
-                                ),
-                            ),
-                            
-                          ]
-                        ),
-
-                        
-                        
-
-                        
-                      ],
-                    ),
-                  ],
-                ),
-              )
-            ,
-
-            
-            ],
-          ),
-          
           
 
           
@@ -129,7 +76,7 @@ class _Quiz2State extends State<Quiz2> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                                 height: 60,
-                                width: 395,
+                                width: 343,
                                 decoration: BoxDecoration(
                                   color: _active2 ? Theme.of(context).primaryColor : Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),
@@ -178,7 +125,7 @@ class _Quiz2State extends State<Quiz2> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                                 height: 60,
-                                width: 395,
+                                width: 343,
                                 decoration: BoxDecoration(
                                   color: _active3 ? Theme.of(context).primaryColor : Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),
@@ -227,7 +174,7 @@ class _Quiz2State extends State<Quiz2> {
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
                                 height: 60,
-                                width: 395,
+                                width: 343,
                                 decoration: BoxDecoration(
                                   color: _active4 ? Theme.of(context).primaryColor : Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),

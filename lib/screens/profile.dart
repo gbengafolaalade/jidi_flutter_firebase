@@ -217,7 +217,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
               children: <Widget>[
                 Container(
                                 height: 90,
-                                width: 390,
+                                width: 340,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),
@@ -246,7 +246,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                                   ),
                                   ),
 
-                                  SizedBox(width: 210),
+                                  SizedBox(width: 170),
                                   
 
                                   new CircularPercentIndicator(
@@ -277,7 +277,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                             children: <Widget>[
                               Container(
                                               height: 90,
-                                              width: 390,
+                                              width: 340,
                                               decoration: BoxDecoration(
                                                 color: Colors.white,
                                                 borderRadius: BorderRadius.circular(10.0),
@@ -306,7 +306,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                                                 ),
                                                 ),
 
-                                                SizedBox(width: 220),
+                                                SizedBox(width: 180),
                                                 
 
                                                 new CircularPercentIndicator(
@@ -337,7 +337,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                             children: <Widget>[
                               Container(
                                               height: 90,
-                                              width: 390,
+                                              width: 340,
                                               decoration: BoxDecoration(
                                                 color: Colors.white,
                                                 borderRadius: BorderRadius.circular(10.0),
@@ -366,7 +366,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                                                 ),
                                                 ),
 
-                                                SizedBox(width: 220),
+                                                SizedBox(width: 180),
                                                 
 
                                                 new CircularPercentIndicator(

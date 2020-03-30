@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'JidiApp',
       theme: ThemeData(
         primaryColor: Color(0xFFFFDA23),
         accentColor: Color(0xFFD8ECF1),
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
 
 
       },
-      home: HomeTestScreen(),
+      home: Login(),
     );
   }
 }

@@ -60,7 +60,7 @@ class _ResultPageState extends State<ResultPage> {
               children: <Widget>[
                 Container(
                                 height: 60,
-                                width: 390,
+                                width: 340,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),
@@ -90,7 +90,7 @@ class _ResultPageState extends State<ResultPage> {
                                   ),
                                   ),
 
-                                  SizedBox(width: 170),
+                                  SizedBox(width: 150),
                                   
 
                                    Text('3',
@@ -111,7 +111,7 @@ class _ResultPageState extends State<ResultPage> {
               children: <Widget>[
                 Container(
                                 height: 60,
-                                width: 390,
+                                width: 340,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),
@@ -140,7 +140,7 @@ class _ResultPageState extends State<ResultPage> {
                                   ),
                                   ),
 
-                                  SizedBox(width: 170),
+                                  SizedBox(width: 140),
                                   
 
                                    Text('1',
@@ -161,7 +161,7 @@ class _ResultPageState extends State<ResultPage> {
               children: <Widget>[
                 Container(
                                 height: 60,
-                                width: 390,
+                                width: 340,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),
@@ -190,7 +190,7 @@ class _ResultPageState extends State<ResultPage> {
                                   ),
                                   ),
 
-                                  SizedBox(width: 170),
+                                  SizedBox(width: 140),
                                   
 
                                    Text('2',
@@ -214,7 +214,7 @@ class _ResultPageState extends State<ResultPage> {
                 Container(
                   
                                 height: 150,
-                                width: 390,
+                                width: 340,
                                 
                                 child: Row(
                                   
@@ -235,7 +235,7 @@ class _ResultPageState extends State<ResultPage> {
                                       ),
                                       ),
                                       
-                                      SizedBox(width: 60),
+                                      SizedBox(width: 12.0),
                                       
                                       RaisedButton(
                                       shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0),

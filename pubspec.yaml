@@ -28,12 +28,9 @@ dependencies:
   video_player: ^0.10.8+1
   flutube: ^0.8.3
   chewie: ^0.9.10
-  flutter_launcher_icons: ^0.7.4
+  flutter_screenutil: ^1.0.2
+  audioplayers: ^0.14.1
 
-flutter_icons:
-  android: "launcher_icon" 
-  ios: true
-  image_path: "assets/jidi-logo.png"  
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +60,9 @@ flutter:
   - assets/playvid2.png
   - videos/mosbi.mp4
   - videos/intro.mp4
+  - assets/jidi-logo.png
+  - assets/mura.mp3
+
 
 
   fonts:
